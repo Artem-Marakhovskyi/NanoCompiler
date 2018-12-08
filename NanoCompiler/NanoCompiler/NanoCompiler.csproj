@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -43,11 +45,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LambaBuilder\LambdaBuilder.cs" />
+    <Compile Include="LambaBuilder\PrioritiesProvider.cs" />
+    <Compile Include="Parser\INanoParser.cs" />
+    <Compile Include="Parser\IParserConfigurator.cs" />
+    <Compile Include="Parser\NanoParser.cs" />
+    <Compile Include="Parser\ParsedDataBag.cs" />
+    <Compile Include="LambaBuilder\SyntaxElementType.cs" />
+    <Compile Include="Parser\ParserConfigurator.cs" />
+    <Compile Include="Parser\RgxParser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Syntax\Binaries\AdditionTreeNode.cs" />
+    <Compile Include="Syntax\Binaries\BinaryTreeNodeBase.cs" />
+    <Compile Include="Syntax\Binaries\DivisionTreeNode.cs" />
+    <Compile Include="Syntax\Binaries\ExponentiationTreeNode.cs" />
+    <Compile Include="Syntax\Binaries\MultiplicationTreeNode.cs" />
+    <Compile Include="Syntax\Binaries\SubtractionTreeNode.cs" />
+    <Compile Include="Syntax\SyntaxNodeFactory.cs" />
+    <Compile Include="Syntax\SyntaxTreeNodeBase.cs" />
+    <Compile Include="Syntax\Terminals\ConstantTreeNode.cs" />
+    <Compile Include="Syntax\Terminals\ParameterTreeNode.cs" />
+    <Compile Include="Syntax\Terminals\TerminalTreeNodeBase.cs" />
+    <Compile Include="Syntax\Unaries\FactorialTreeNode.cs" />
+    <Compile Include="Syntax\Unaries\UnaryTreeNodeBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
