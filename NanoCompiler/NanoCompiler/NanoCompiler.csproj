@@ -62,7 +62,6 @@
     <Compile Include="Syntax\Binaries\ExponentiationTreeNode.cs" />
     <Compile Include="Syntax\Binaries\MultiplicationTreeNode.cs" />
     <Compile Include="Syntax\Binaries\SubtractionTreeNode.cs" />
-    <Compile Include="Syntax\SyntaxNodeFactory.cs" />
     <Compile Include="Syntax\SyntaxTreeNodeBase.cs" />
     <Compile Include="Syntax\Terminals\ConstantTreeNode.cs" />
     <Compile Include="Syntax\Terminals\ParameterTreeNode.cs" />

@@ -5,7 +5,6 @@ namespace NanoCompiler.Syntax
 {
     abstract class SyntaxTreeNodeBase
     {
-        public SyntaxElementType NodeType { get; private set; }
         public abstract Expression ConvertToExpression();
     }
 }

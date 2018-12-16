@@ -41,10 +41,15 @@ namespace NanoCompiler.LambaBuilder
                 {
                     if (priorityElement.Contains(bagArray[i].Kind))
                     {
-                        syntaxElementsList[i] = 
+                        syntaxElementsList[i] = CreateTreeNode(bagArray, i);
                     }
                 }
             }
+        }
+
+        private SyntaxTreeNodeBase CreateTreeNode(ParsedDataBag[] bagArray, int i)
+        {
+            
         }
     }
 }
